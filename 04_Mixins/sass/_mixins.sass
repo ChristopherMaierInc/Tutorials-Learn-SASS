@@ -1,0 +1,16 @@
+// GLOBAL MIXINS
+
+=box( $radius, $shadowColour, $grad1, $grad2 )
+  -webkit-border-radius:  $radius
+  -moz-border-radius:     $radius
+  border-radius:          $radius
+
+  -webkit-box-shadow: 0 5px 10px $shadowColour
+  -moz-box-shadow:    0 5px 10px $shadowColour
+  box-shadow:         0 5px 10px $shadowColour
+
+  background: #036
+  background: #036 -webkit-linear-gradient($grad1, $grad2)
+  background: #036 -moz-linear-gradient($grad1, $grad2)
+  background: #036 -o-linear-gradient($grad1, $grad2)
+  background: #036 linear-gradient($grad1, $grad2)
