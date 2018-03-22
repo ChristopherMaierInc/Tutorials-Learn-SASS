@@ -1,12 +1,17 @@
 // COMMON
 
 body
+  font-family: $font-stack-consolas
   font-size: $base-size
   background: $pink
 
 .brand
-  background: center no-repeat
+  +hide-text
+  background-image: url("../img/bourbon-logo_2x.png")
+  background-size: cover
   height: 56px
+  width: 294px
+
   margin: $gutter auto
 
 h2
@@ -16,10 +21,14 @@ h2
 
 h3
   @extend h2
-  color: $teal
+  background: tint($blue, 20%)
+  color: white
   padding: 10px 0
   font-size: $base-size * 1.4
   text-transform: uppercase
+
+section
+  +clearfix
 
 footer
   text-align: center

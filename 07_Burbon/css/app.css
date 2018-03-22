@@ -1,12 +1,18 @@
 /* PLUGINS */
 /* BASE STYLES */
 body {
+  font-family: "Consolas", "monaco", monospace;
   font-size: 14px;
   background: #c69; }
 
 .brand {
-  background: center no-repeat;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  background-image: url("../img/bourbon-logo_2x.png");
+  background-size: cover;
   height: 56px;
+  width: 294px;
   margin: 30px auto; }
 
 h2, h3 {
@@ -15,10 +21,16 @@ h2, h3 {
   text-align: center; }
 
 h3 {
-  color: #699;
+  background: #335c85;
+  color: white;
   padding: 10px 0;
   font-size: 19.6px;
   text-transform: uppercase; }
+
+section::after {
+  clear: both;
+  content: "";
+  display: block; }
 
 footer {
   text-align: center;
@@ -48,9 +60,12 @@ header {
 
 /* MODULES */
 .box {
-  background: #699;
+  height: 100px;
+  width: 280px;
+  background: #5c8a8a;
+  float: left;
   color: white;
-  border: solid 1px shade(#699, 20%);
+  border: solid 1px #527a7a;
   box-sizing: border-box;
   text-align: center;
   line-height: 100px;
