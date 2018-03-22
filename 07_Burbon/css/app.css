@@ -72,5 +72,49 @@ header {
   margin: 0 30px 0 0; }
   .box:last-child {
     margin-right: 0; }
+  .box:hover {
+    animation: wow 0.35s ease-in-out 1; }
+
+@keyframes wow {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(2) rotate(-6deg); }
+  100% {
+    transform: scale(1); } }
+[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
+  position: relative;
+  padding: 10px;
+  font-size: 14px;
+  border: solid 1px #333;
+  box-shadow: -4px 4px 0 #444; }
+
+[type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus,
+[type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
+  border-color: #333;
+  outline-color: #4CAF50;
+  box-shadow: -6px 6px 0 #222; }
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  background-color: #c69;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px;
+  border: solid 1px #b85c8a;
+  box-shadow: -4px 4px 0 #a3527a;
+  color: white; }
+
+button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus,
+button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
+  outline: none;
+  border: solid 1px #a3527a;
+  cursor: pointer; }
+
+button:active, [type='button']:active, [type='reset']:active, [type='submit']:active {
+  outline: none;
+  position: relative;
+  top: 2px;
+  left: -2px;
+  box-shadow: -2px 2px 0 #8f476b; }
 
 /*# sourceMappingURL=app.css.map */
