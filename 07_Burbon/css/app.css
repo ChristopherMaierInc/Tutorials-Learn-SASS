@@ -73,7 +73,7 @@ header {
   .box:last-child {
     margin-right: 0; }
   .box:hover {
-    animation: wow 0.35s ease-in-out 1; }
+    animation: wow 0.35s cubic-bezier(0.86, 0, 0.07, 1) 1; }
 
 @keyframes wow {
   0% {
@@ -107,8 +107,11 @@ button, [type='button'], [type='reset'], [type='submit'] {
 button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus,
 button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
   outline: none;
-  border: solid 1px #a3527a;
+  border: solid 1px #c46293;
   cursor: pointer; }
+
+button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
+  background-color: #c46293; }
 
 button:active, [type='button']:active, [type='reset']:active, [type='submit']:active {
   outline: none;
