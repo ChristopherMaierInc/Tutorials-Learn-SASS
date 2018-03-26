@@ -214,11 +214,130 @@ hr {
 /* ==============================
  * BASE STYLES
  * ============================== */
+/* COMMON.SASS */
+body {
+  font-family: "Consolas", "monaco", monospace; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 3em; }
+
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+header {
+  padding: 40px 40px 0; }
+  header::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.brand {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  margin: 15px 0;
+  background: center no-repeat;
+  height: 125px;
+  width: 125px;
+  float: left;
+  background-image: url("../img/brightside-studios-logo_2x.png");
+  background-size: 125px 125px; }
+
+a {
+  color: #373737;
+  border-bottom: 1px solid #373737;
+  text-decoration: none; }
+  a:hover {
+    color: #f26722; }
+
+section, aside, article {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  section::after, aside::after, article::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  font-family: "PT Sans", sans-serif;
+  background: #f26722; }
+  button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
+    background: #da5d1f; }
+
+/* NAV.SASS */
+nav {
+  float: right;
+  margin-top: 60px;
+  font-weight: bold; }
+  nav li {
+    display: inline-block;
+    padding: 0 20px; }
+
+/* FOOTER.SASS */
+footer {
+  text-align: center;
+  padding: 40px 0; }
+
 /* ==============================
  * LAYOUT STYLES
  * ============================== */
+/* HOME.SASS */
+.basic-info::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.about {
+  float: left;
+  display: block;
+  margin-right: 2.3576520234%;
+  width: 48.8211739883%;
+  margin-left: 8.5298043353%; }
+  .about:last-child {
+    margin-right: 0; }
+
+.widgets {
+  background: #f4f6ef;
+  padding: 40px; }
+
+h3 {
+  font-size: 2em;
+  border-bottom: solid 1px #373737; }
+
 /* ==============================
  * MODULE STYLES
  * ============================== */
+/* CTA.SASS */
+.call-to-action {
+  float: left;
+  display: block;
+  margin-right: 2.3576520234%;
+  width: 31.7615653177%;
+  margin-right: 0;
+  border: solid 1px #040404;
+  padding: 40px;
+  background: #373737;
+  color: #f4f6ef; }
+  .call-to-action:last-child {
+    margin-right: 0; }
+
+/* WIDGET.SASS */
+.widget {
+  float: left;
+  display: block;
+  margin-right: 2.3576520234%;
+  width: 31.7615653177%; }
+  .widget:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=app.css.map */
